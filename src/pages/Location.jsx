@@ -1,4 +1,5 @@
 import PageHeader from '../components/PageHeader'
+import { img } from '../utils/assets'
 
 export default function Location() {
   return (
@@ -9,7 +10,7 @@ export default function Location() {
         {/* 지도 이미지 */}
         <div className="rounded-xl overflow-hidden mb-8 border border-gray-200">
           <img
-            src="/images/address_image.png"
+            src={img('address_image.png')}
             alt="씨에이치 테크 위치 - 경기도 광주시 곤지암읍 광여로 404"
             className="w-full h-auto"
           />

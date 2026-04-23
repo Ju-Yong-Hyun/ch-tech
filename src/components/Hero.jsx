@@ -1,21 +1,22 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Link } from 'react-router-dom'
+import { img } from '../utils/assets'
 
 const slides = [
   {
-    image: '/images/image1.jpg',
+    image: img('image1.jpg'),
     title: '스테인리스·알루미늄',
     highlight: '가공 전문기업',
     desc: '절단, 절곡, 레이저커팅, 밴딩작업 전문',
   },
   {
-    image: '/images/image2.jpg',
+    image: img('image2.jpg'),
     title: '배관·구조물',
     highlight: '맞춤 제작',
     desc: 'STS 파이프, 앵글, 환봉 등 전 품목 취급',
   },
   {
-    image: '/images/image3.jpg',
+    image: img('image3.jpg'),
     title: '정밀 레이저 커팅',
     highlight: '& 가공 서비스',
     desc: '최신 장비로 고품질 가공을 약속합니다',
@@ -66,7 +67,7 @@ export default function Hero() {
             alt={slide.title}
             className="relative w-full h-full object-cover object-center"
           />
-          {/* 오버레이 - 더 진하게 */}
+          {/* 오버레이 */}
           <div className="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/70 to-navy-900/40" />
         </div>
       ))}

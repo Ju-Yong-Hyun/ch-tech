@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { img } from '../utils/assets'
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           {/* 회사 정보 */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <img src="/images/logo/tasung_logo.png" alt="씨에이치 테크 로고" className="h-8 w-auto brightness-200" />
+              <img src={img('logo/tasung_logo.png')} alt="씨에이치 테크 로고" className="h-8 w-auto brightness-200" />
               <h3 className="text-white text-lg font-bold">씨에이치 테크</h3>
             </div>
             <p className="text-sm leading-relaxed">

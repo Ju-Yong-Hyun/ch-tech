@@ -1,28 +1,29 @@
 import PageHeader from '../components/PageHeader'
+import { img } from '../utils/assets'
 
 const services = [
   {
     name: '레이저 가공 & 절곡',
     description: 'CNC 레이저 절단 및 정밀 절곡 가공',
-    image: '/images/image3.jpg',
+    image: img('image3.jpg'),
     features: ['고정밀 CNC 레이저 커팅', '다양한 두께 절단 가능', '복잡한 형상 절단', '정밀 절곡 가공'],
   },
   {
     name: '대형 플라즈마 & 대형 절곡',
     description: '대형 플라즈마 절단 및 대형 절곡 가공',
-    image: '/images/image1.jpg',
+    image: img('image1.jpg'),
     features: ['대형 판재 플라즈마 절단', '대형 절곡기 보유', '후판 가공 가능', '대량 생산 대응'],
   },
   {
     name: '판금 및 종합가공',
     description: '판금, 용접, 밴딩 등 종합 금속 가공',
-    image: '/images/image4.jpg',
+    image: img('image4.jpg'),
     features: ['판금 가공', 'TIG / MIG 용접', '밴딩 가공', '조립 및 제작'],
   },
   {
     name: '제작 제품 및 샘플',
     description: '씨에이치 테크에서 제작한 다양한 가공 제품 사례',
-    image: '/images/image5.jpg',
+    image: img('image5.jpg'),
     features: ['맞춤 제작 사례', '산업용 구조물', '인테리어 시공물', '특수 주문 제작'],
   },
 ]
@@ -39,7 +40,6 @@ export default function Processing() {
               key={service.name}
               className={`flex flex-col ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-10 items-center`}
             >
-              {/* 이미지 */}
               <div className="w-full md:w-1/2 aspect-[4/3] rounded-xl overflow-hidden">
                 <img
                   src={service.image}
@@ -47,8 +47,6 @@ export default function Processing() {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>
-
-              {/* 텍스트 */}
               <div className="w-full md:w-1/2">
                 <h3 className="text-2xl font-bold text-navy-900 mb-2">{service.name}</h3>
                 <p className="text-navy-500 mb-5">{service.description}</p>

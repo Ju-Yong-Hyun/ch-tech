@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { img } from '../utils/assets'
 
 const navItems = [
   {
@@ -48,7 +49,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* 로고 */}
           <Link to="/" className="flex items-center gap-3">
-            <img src="/images/logo/tasung_logo.png" alt="씨에이치 테크 로고" className="h-14 md:h-16 w-auto" />
+            <img src={img('logo/tasung_logo.png')} alt="씨에이치 테크 로고" className="h-14 md:h-16 w-auto" />
             <div>
               <span className="text-xl md:text-2xl font-bold text-navy-900 block leading-tight">씨에이치 테크</span>
               <span className="text-xs text-navy-400 hidden sm:block">CH Tech</span>

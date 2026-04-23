@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Hero from '../components/Hero'
+import { img } from '../utils/assets'
 
 const services = [
   {
@@ -43,6 +44,15 @@ const strengths = [
   { number: '1일', label: '빠른 납기', desc: '재고 보유 즉시 출고' },
 ]
 
+const gallery = [
+  { src: img('image1.jpg'), label: '용접 가공' },
+  { src: img('image3.jpg'), label: '레이저 커팅' },
+  { src: img('image5.jpg'), label: '정밀 용접' },
+  { src: img('image4.jpg'), label: '현장 작업' },
+  { src: img('image2.jpg'), label: '배관 용접' },
+  { src: img('image1.jpg'), label: '스파크 용접' },
+]
+
 export default function Home() {
   return (
     <>
@@ -81,14 +91,7 @@ export default function Home() {
             <p className="mt-3 text-navy-500">숙련된 기술력으로 고품질 가공을 제공합니다</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[
-              { src: '/images/image1.jpg', label: '용접 가공' },
-              { src: '/images/image3.jpg', label: '레이저 커팅' },
-              { src: '/images/image5.jpg', label: '정밀 용접' },
-              { src: '/images/image4.jpg', label: '현장 작업' },
-              { src: '/images/image2.jpg', label: '배관 용접' },
-              { src: '/images/image1.jpg', label: '스파크 용접' },
-            ].map((item, i) => (
+            {gallery.map((item, i) => (
               <div
                 key={i}
                 className="group relative aspect-[4/3] rounded-xl overflow-hidden"
@@ -111,7 +114,7 @@ export default function Home() {
       {/* 강점 - 이미지 배경 */}
       <section className="relative py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/image5.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={img('image5.jpg')} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-navy-900/85" />
         </div>
         <div className="relative max-w-6xl mx-auto px-4">
