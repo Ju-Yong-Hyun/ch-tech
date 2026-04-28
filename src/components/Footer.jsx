@@ -13,9 +13,9 @@ export default function Footer() {
               <h3 className="text-white text-lg font-bold">씨에이치 테크</h3>
             </div>
             <p className="text-sm leading-relaxed">
-              STS / AL 전문기업<br />
-              스텐가공 및 절단, 절곡, 레이저커팅,<br />
-              밴딩작업 전문
+              프리미엄 용접 전문 제작 기업<br />
+              금속 구조물·산업용 설비<br />
+              종합 금속가공 전문업체
             </p>
           </div>
 
@@ -47,10 +47,10 @@ export default function Footer() {
             <h3 className="text-white text-lg font-bold mb-3">바로가기</h3>
             <ul className="text-sm space-y-1.5">
               <li><Link to="/about" className="hover:text-white transition-colors">회사소개</Link></li>
-              <li><Link to="/products/sts" className="hover:text-white transition-colors">STS 제품소개</Link></li>
-              <li><Link to="/products/al" className="hover:text-white transition-colors">AL 제품소개</Link></li>
-              <li><Link to="/processing" className="hover:text-white transition-colors">가공안내·장비</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition-colors">문의안내</Link></li>
+              <li><Link to="/products" className="hover:text-white transition-colors">제품소개</Link></li>
+              <li><Link to="/gallery" className="hover:text-white transition-colors">제작사진</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">견적문의</Link></li>
+              <li><Link to="/notices" className="hover:text-white transition-colors">공지사항</Link></li>
             </ul>
           </div>
         </div>

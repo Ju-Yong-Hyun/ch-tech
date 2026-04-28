@@ -3,13 +3,20 @@ import PageHeader from '../components/PageHeader'
 export default function Contact() {
   return (
     <>
-      <PageHeader title="문의 안내" description="전화 또는 이메일로 편하게 문의해 주세요" />
+      <PageHeader title="견적문의" description="도면이나 요구사항을 알려주시면 빠르게 견적을 드리겠습니다" />
 
       <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
         <div className="max-w-2xl mx-auto">
+          {/* 안내 문구 */}
+          <div className="bg-navy-50 rounded-xl p-6 md:p-8 mb-8 text-center">
+            <p className="text-navy-700 leading-relaxed">
+              제작 의뢰는 전화 또는 이메일로 문의 주시면,<br />
+              도면·요구사항 확인 후 신속히 견적을 송부해 드립니다.
+            </p>
+          </div>
+
           {/* 연락 수단 카드 */}
           <div className="grid gap-6">
-            {/* 전화 */}
             <a
               href="tel:01023029204"
               className="flex items-center gap-5 bg-white rounded-xl border border-gray-100 p-6 hover:shadow-md hover:border-accent/30 transition-all group"
@@ -23,7 +30,6 @@ export default function Contact() {
               </div>
             </a>
 
-            {/* 이메일 */}
             <a
               href="mailto:nam9292@hanmail.net"
               className="flex items-center gap-5 bg-white rounded-xl border border-gray-100 p-6 hover:shadow-md hover:border-accent/30 transition-all group"
@@ -37,7 +43,6 @@ export default function Contact() {
               </div>
             </a>
 
-            {/* FAX */}
             <div className="flex items-center gap-5 bg-white rounded-xl border border-gray-100 p-6">
               <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-8 h-8 text-navy-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
@@ -48,7 +53,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* 주소 */}
             <div className="flex items-center gap-5 bg-white rounded-xl border border-gray-100 p-6">
               <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <svg className="w-8 h-8 text-navy-400" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>

@@ -2,3 +2,10 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# tooling
+.claude/
+
+# 블로그 분석용 자료 (커밋 제외)
+public/images/블로그.html
+public/images/블로그_files/

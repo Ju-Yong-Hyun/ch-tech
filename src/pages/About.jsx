@@ -3,7 +3,7 @@ import PageHeader from '../components/PageHeader'
 export default function About() {
   return (
     <>
-      <PageHeader title="회사소개" description="STS / AL 전문기업 씨에이치 테크를 소개합니다" />
+      <PageHeader title="회사소개" description="용접 기술로 만드는 정확한 제작 — 씨에이치 테크" />
 
       <div className="max-w-6xl mx-auto px-4 py-12 md:py-16">
         {/* 인사말 */}
@@ -15,15 +15,19 @@ export default function About() {
               <strong>씨에이치 테크</strong>를 방문해 주셔서 감사합니다.
             </p>
             <p className="text-navy-600 leading-relaxed mt-4">
-              저희 씨에이치 테크는 스테인리스(STS) 및 알루미늄(AL) 소재의 공급과 가공을 전문으로 하는 기업입니다.
-              오랜 경험과 노하우를 바탕으로 고객 여러분께 최상의 제품과 서비스를 제공하고자 항상 노력하고 있습니다.
+              저희 씨에이치 테크는 용접 기술을 기반으로 금속 구조물과 산업용 설비를 제작하는
+              종합 금속가공 전문업체입니다. 단순한 용접 작업에 머무르지 않고, 도면과 요구사항에
+              맞춘 정확한 설계·제작·마감까지 일괄 책임지는 것을 원칙으로 삼고 있습니다.
             </p>
             <p className="text-navy-600 leading-relaxed mt-4">
-              판재, 파이프, 앵글, 환봉, 부속 등 다양한 STS/AL 제품을 보유하고 있으며,
-              레이저 커팅, 절곡, 플라즈마 절단, 판금 가공 등 종합 가공 서비스를 제공합니다.
+              산업 현장의 점검 사다리·구조물 프레임부터 사각·원형 저장 탱크,
+              산업용 설비와 함체에 이르기까지, 다양한 분야에서 쌓아온 제작 경험으로
+              고객의 요구를 충실히 구현해 드립니다.
             </p>
             <p className="text-navy-600 leading-relaxed mt-4">
-              앞으로도 고객 만족을 최우선으로 생각하며, 신뢰받는 기업이 되겠습니다.
+              "정확한 제작"이라는 약속을 무엇보다 소중히 여기며,
+              납품 이후에도 끝까지 책임지는 자세로 신뢰받는 기업이 되겠습니다.
+              앞으로도 변함없는 관심과 성원 부탁드립니다.
             </p>
             <p className="text-right text-navy-700 font-semibold mt-6">
               씨에이치 테크 대표이사 남국의
@@ -40,9 +44,9 @@ export default function About() {
                 {[
                   ['회사명', '씨에이치 테크 (CH Tech)'],
                   ['대표이사', '남국의'],
-                  ['업종', 'STS / AL 소재 공급 및 가공'],
-                  ['주요 제품', '스테인리스 판재, 파이프, 앵글, 환봉, 부속 / 알루미늄 판재'],
-                  ['주요 서비스', '레이저 커팅, 절곡, 플라즈마 절단, 판금 가공'],
+                  ['업종', '용접 기반 금속 구조물·산업용 설비 제작'],
+                  ['주요 제작', '점검 사다리·프레임 / 사각·원형 탱크 / 산업용 설비·함체'],
+                  ['보유 기술', 'TIG·MIG 용접, 정밀 절단, 절곡, 마감 처리'],
                   ['전화', '010-2302-9204'],
                   ['FAX', '070-7760-0423'],
                   ['이메일', 'nam9292@hanmail.net'],
@@ -67,7 +71,7 @@ export default function About() {
             </div>
             <div className="w-px h-8 bg-navy-300" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-              {['영업부', '생산부', '가공부', '관리부'].map((dept) => (
+              {['영업·견적', '설계', '제작·용접', '관리'].map((dept) => (
                 <div key={dept} className="relative">
                   <div className="w-px h-4 bg-navy-300 mx-auto" />
                   <div className="bg-navy-100 text-navy-700 px-6 py-2.5 rounded-lg text-center font-medium">

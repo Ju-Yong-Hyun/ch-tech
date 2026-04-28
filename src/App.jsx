@@ -4,11 +4,12 @@ import Footer from './components/Footer'
 import ContactBar from './components/ContactBar'
 import Home from './pages/Home'
 import About from './pages/About'
-import Location from './pages/Location'
-import ProductsSTS from './pages/ProductsSTS'
-import ProductsAL from './pages/ProductsAL'
-import Processing from './pages/Processing'
+import Products from './pages/Products'
+import ProductDetail from './pages/ProductDetail'
+import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import Notices from './pages/Notices'
+import NoticeDetail from './pages/NoticeDetail'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 
@@ -20,11 +21,12 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/location" element={<Location />} />
-          <Route path="/products/sts" element={<ProductsSTS />} />
-          <Route path="/products/al" element={<ProductsAL />} />
-          <Route path="/processing" element={<Processing />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/notices" element={<Notices />} />
+          <Route path="/notices/:id" element={<NoticeDetail />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
